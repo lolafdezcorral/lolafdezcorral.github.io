@@ -1,0 +1,819 @@
+/* Reset / Normalizador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none
+}
+
+:root {
+    font-size: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    font-family: "Mohave", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #31333A;
+}
+a{
+        text-decoration: none; /* Quita el subrayado */
+        color: inherit; /* Hereda el color del elemento padre */
+    }
+
+@font-face {
+    font-family: 'doppelgangerdisplay';
+    src: url('doppelganger_display-webfont.woff2') format('woff2'),
+        url('doppelganger_display-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.mohaveuniquifier {
+    font-family: "Mohave", sans-serif;
+    font-style: normal;
+}
+
+/*
+index.css
+-Reset/normalizador
+-Header
+-Main
+    -Nombre
+    -Perfil diseño|grabado
+-Secciones
+    -Perfiles
+    -Marquee formación
+    -Marquee experiencia
+-Galeria
+-Footer
+
+
+*/
+
+/* Header */
+.header {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__logo {
+    width: 2rem;
+    min-height: 2rem;
+    background-color: white;
+    margin: 10px;
+
+}
+
+.header__nav {
+    background-color: white;
+    width: 2rem;
+    min-height: 2rem;
+    margin: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+/* Main y su responsive */
+
+
+.main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main__wrapper {
+    width: 15%;
+    margin: 2%;
+
+    display: block;
+    flex-flow: row nowrap;
+    justify-content: center;
+;
+
+}
+
+@media screen and (max-width:480px) {
+    .main__wrapper {
+        width:60%;
+        
+    }
+
+
+    
+}
+
+.main__nombre {
+    width: 90%;
+    margin:5%;
+    text-align: center;
+
+}
+
+.main__nombre:hover{
+    font-family: 'doppelgangerdisplay';
+    color: #5C82F2;
+    line-height: 1.39;
+    
+    }
+/*Cambio de peso al H1 para hacerlo más similar a mi marca*/    
+h1{
+    font-weight: 500;
+}
+
+.main__lola{
+    font-size: 3vw;
+    letter-spacing:-0.1vw;
+    transform:scaleY(1.3);
+
+
+}
+.main__apellidos{
+    font-size: 1.5vw;
+    margin-top: -0.5rem;
+
+}
+
+.main__perfiles {
+    width: 90%;
+    margin: 5%;
+    padding: 30%;
+
+    display: flex;
+    justify-content: center;
+
+
+    font-size: 3vw;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:480px) {
+    .main__perfiles {
+        font-size: 10vw;}
+    .main__lola{
+        font-size:10vw;
+    }
+    .main__apellidos{
+        font-size:5vw ;
+    }
+    
+}
+
+.main__perfiles--diseno {
+
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    text-align: center;
+}
+
+.main__perfiles--diseno:hover{
+    color: #5C82F2;
+
+}
+
+.main__perfiles--grabado {
+    writing-mode: vertical-rl;
+
+    letter-spacing: 1px;
+}
+.main__perfiles--grabado:hover{
+    color: #5C82F2;
+}
+
+.section {
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.section__perfil--diseno {
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 1.2;
+}
+
+.section__perfil--animacion {
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.section__perfil--identidad {
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.section__perfil--ilustracion {
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.section__perfil--calcografia {
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.section__perfil--adaptaciones {
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+@media screen and (max-width:480px) {
+    .section__perfil {
+        width: 8rem;
+    }
+    .section__trabajo{
+        display:block;
+
+    
+    }
+
+}
+
+
+.marquee__formacion {
+    width: 100%;
+    background-color: #5C82F2;
+    color: white;
+    margin-top: 2rem;
+    padding: 0.2rem;
+
+    font-size: medium;
+    text-align: center;
+
+
+    overflow: hidden;
+}
+
+.marquee__contenido {
+    display: flex;
+    white-space: nowrap;
+    list-style: none;
+    animation: desplazarderecha 20s linear infinite 2s;
+
+    flex-shrink: 0;
+}
+
+/* animación marquee*/
+
+@keyframes desplazarderecha {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+
+.marquee__experiencia {
+    width: 100%;
+    background-color:white;
+    color: #5C82F2;
+    margin-top: 1rem;
+    padding: 0.2rem;
+
+    border:2px solid #5C82F2;
+
+    font-size: medium;
+    text-align: center;
+
+
+    overflow: hidden;
+
+}
+.marquee__contenido--experiencia{
+    display: flex;
+    white-space: nowrap;
+    list-style: none;
+        flex-shrink: 0;
+
+    animation: desplazarizq 20s linear infinite;
+}
+@keyframes desplazarizq {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+/* Sección de galería por temática. A)Izquierda DIGITAL Y B)derecha TRADICIONAL */
+
+.section__trabajo {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+@media (max-width:700px){
+    .section__trabajo {
+        display:block;
+        margin: auto;
+        width: 50%;
+
+
+    }}
+    .estilo-enlace{
+        color:#5C82F2;
+    }
+/* A) izquierda DIGITAL */
+
+.trabajo__digital {
+    margin: 3rem;
+    gap: 3rem;
+    align-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+
+    
+    font-family: 'doppelgangerdisplay';
+    font-size:2.5em;
+    text-align: center;
+    color: #5C82F2;
+
+}
+
+@media (max-width:700px){
+    .trabajo__digital {
+        grid-template-columns: 1fr;
+        margin: 3rem auto;
+
+    }}
+
+    /* Img se hacen visible con :hover */
+.img__activa{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.img__activa:hover{
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+    position: absolute;
+}
+.titulo{
+    position: absolute;
+    text-align: center;
+}
+
+/* A.1 Video */
+
+.trabajo__digital--video {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: -17px -17px #5C82F2;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+}
+
+.trabajo__digital--video:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+    
+}
+
+
+
+ /* A.2 Identidad */   
+
+.trabajo__digital--identidad {
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: -17px -17px #5C82F2;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.trabajo__digital--identidad:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+
+/* A.3 Web */
+.trabajo__digital--web {
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: -17px -17px #5C82F2;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+
+
+}
+.trabajo__digital--web:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+/* A.4 Adaptaciones */
+.trabajo__digital--adaptaciones {
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: -17px -17px #5C82F2;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+
+
+}
+.trabajo__digital--adaptaciones:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+/* Textos para indicar digital y tradicional */
+.section__perfile{
+    width:5vw;
+    margin: 5%;
+
+    display: flex;
+    justify-content: center;
+
+
+    font-size: 2vw;
+    letter-spacing: 2px;
+
+}
+@media (max-width:700px){
+    .section__perfile {
+        font-size: 10vw;
+        margin: auto;
+
+    }}
+
+.section__perfil--digital{
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    text-align: center;
+}
+.section__perfil--tradicional{
+    writing-mode: vertical-rl;
+
+    text-align: center;
+}
+
+/* B) derecha TRADICIONAL */
+.trabajo__tradicional {
+    max-width:100%;
+
+    margin: 3rem;
+    gap: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+
+    font-family: 'doppelgangerdisplay';
+    font-size:2.5em;
+    word-wrap: break-word;
+    text-align: center;
+    color: #5C82F2;
+
+}
+@media (max-width:700px){
+    .trabajo__tradicional {
+        grid-template-columns: 1fr;
+        margin: 3rem auto;
+    }}
+
+/* B.1 Calcografia */
+
+.trabajo__tradicional--calcografia{
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: 17px -17px #5C82F2 ;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+
+}
+.trabajo__tradicional--calcografia:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+/* B.2 ilustración */
+.trabajo__tradicional--ilustracion{
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: 17px -17px #5C82F2 ;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+    
+
+}
+.trabajo__tradicional--ilustracion:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+/* B.3 Artes */
+.trabajo__tradicional--artes{
+    min-width: 100px;
+    width: 200px;
+    height: 200px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: 17px -17px #5C82F2 ;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+
+}
+.trabajo__tradicional--artes:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+.trabajo__tradicional--editorial{
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: white;
+    border: 2px solid #5C82F2;
+    box-shadow: 17px -17px #5C82F2 ;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+
+    display: grid;
+    place-items: center;
+    object-fit: cover;
+    position: relative;
+}
+.trabajo__tradicional--editorial:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+}
+
+
+.footer {
+
+    width: 100%;
+    min-height: 300px;
+    background-color:white;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.footer__wrapper {
+
+    width: 70%;
+    min-height: 200px;
+    background-color: white;
+    margin: 80px 30px 30px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+
+
+    color: grey;
+
+}
+@media (max-width:700px) {
+    .footer__wrapper {
+        min-width: 50%;
+    }
+}
+
+.footer__logo{
+    width: 10%;
+    margin: 20px;
+}
+
+.footer__descripcion {
+    width: 60%;
+    background-color: white;
+
+    margin: 20px auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    text-align:center;
+
+}
+
+
+.footer__enlaces {
+    width: 50%;
+    min-height: 20px;
+    margin-top: 2rem;
+
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.footer__portfolio{
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 1.2;
+}
+.footer__cv{
+    min-width: 10rem;
+    border: 2px solid #5C82F2;
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 50px;
+
+
+
+    color: #5C82F2;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 1.2;
+}
+.footer__cv:hover{
+    background-color: #5C82F2;
+    color: white;
+
+}
+.sin-estilo{
+    text-decoration: none;
+    color: #5C82F2
+
+}
+.sin-estilo:hover{
+    text-decoration: none;
+    color:white;
+
+}
+/* FIX:Enlace :hover */

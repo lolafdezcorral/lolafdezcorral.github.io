@@ -1,0 +1,177 @@
+<!--
+Archivo contiene estructura general de web-portfolio:
+- Header-menú
+- Main 
+    Barra índice de apartados
+    Seccion con descripción y slider
+-Footer con:
+    ·Logo
+    ·Sobre mi
+    ·Botones enlaces a pdf
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER_Lola</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./js/index.js"></script>
+
+
+</head>
+
+<body>
+    <!--Header con logo y menú hamburguesa-->
+
+    <header class="header">
+        <a href="../1.HOME_Lola/index.html">
+            <div class="header__logo">
+                <img src="./assets/header_logo--Lola.svg" alt="" class="header-logo">
+        </a>
+
+        </div>
+        <nav class="header__nav">
+            <img src="./assets/header_nav.svg" alt="" class="">
+        </nav>
+    </header>
+
+    <!-- Maain, descripción y slider -->
+
+    <main class="main">
+        <section class="indice__wrapper">
+            <ul class="indice__digital">
+                <li class="indice__titulo--digital">
+                    <h1>DIGITAL</h1>
+                </li>
+                <li class="indice__identidad">
+                    Identidad
+                </li>
+
+                <li class="indice__rrss">
+                    RRSS y Web
+                </li>
+                <li class="indice__video">
+                    App
+                </li>
+                <li class="indice__app">
+                    Vídeo
+                </li>
+
+            </ul>
+
+            <section class="slider__wrapper">
+                <div class="slider__descripcion">
+                    <div class="slider__descripcion--titulo">IDENTIDAD CORPORATIVA</div>
+                    <div class="slider__descripcion--info">
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Obcaecati, perferendis deserunt. Adipisci corrupti animi eligendi velit, deserunt ut
+                            magni, rem exercitationem saepe error enim odio officiis, laborum cumque et ex. adipisicing
+                            elit. Numquam cumque deserunt dolor incidunt, asperiores repudiandae magni provident facere,
+                            sed a iusto explicabo architecto voluptas officiis ab eos, iure porro nemo!</p>
+                    </div>
+
+
+                </div>
+
+                <div class="Slider">
+                    <div class="Slider-container">
+                        <img src="assets/MOCKUP_TODAS_REFUEL.jpg" alt="Imagen 1"
+                            class="Slider-img isActive Slider-static">
+                        <img src="assets/MOCKUP_TODAS_REJOICE.jpg" alt="Imagen 2" class="Slider-img">
+                        <img src="assets/MOCKUP_TODAS_RELAX.jpg" alt="Imagen 3" class="Slider-img">
+                    </div>
+
+                    <button class="Slider-arrow next">
+                        <svg class="Slider-svg" xmlns="http://www.w3.org/2000/svg" fill=#5C82F2 viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <button class="Slider-arrow prev">
+                        <svg class="Slider-svg" xmlns="http://www.w3.org/2000/svg" fill=#5C82F2 viewBox="0 0 16 16">
+                            <path fill-rule=""
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                    </button>
+
+                    <ul class="Slider-ul">
+                        <li class="Slider-li"><button class="Slider-point isActive"></button></li>
+                        <li class="Slider-li"><button class="Slider-point"></button></li>
+                        <li class="Slider-li"><button class="Slider-point"></button></li>
+                    </ul>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+        </section>
+
+
+    </main>
+
+    <!--Footer con logo, descripción sobre mi y dos enlaces a pdf-->
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <img src="assets/header_logo--Lola.svg" alt="logo footer">
+            </div>
+            <div class="footer__descripcion">
+                <div class="p descripcion_p">
+                    <h2>SOBRE MI</h2>
+                    <br>
+                    <p>Soy una artista visual con un curriculum orientado al a gráfica. Graduada en Bellas Artes con
+                        estancia en Plymouth. Me especialicé con un Máster en Medios de Impresión Gráfica, Ilustración y
+                        Acuñación Artística de la FNMT-RCM, donde trabajé durante un año.
+                    </p>
+
+                    <p> Me he formado en Marketing Digital y Branding ya que considero que además de tener un dominio de
+                        la gráfica tradicional y digital, es importante comunicar con los medios digitales
+                        contemporáneos y transversales. Actualmente trabajo como diseñadora gráfica mientras lo sigo
+                        compaginando con nueva formación enfocada a motion graphics y diseño web.</p>
+
+
+
+                </div>
+
+            </div>
+
+            <ul class="footer__enlaces">
+
+                <li class="footer__portfolio">
+                    Enlade Portfolio
+
+                </li>
+
+                <li class="footer__cv"><a href="../1.HOME_Lola/assets/LolaFdezCorral_CV_2024.pdf" class="sin-estilo">
+                        Enlace CV
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

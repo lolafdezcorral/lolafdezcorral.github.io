@@ -1,0 +1,198 @@
+<!--
+Archivo contiene estructura general de web-portfolio:
+- Header-menú
+- Main que agrupa el contenido principal, en su interior
+    ·Section con diferentes apartador que definen el PERFIL
+    ·Marquee con desplazamiento para mostrar FORMACIÓN
+    ·Marquee con desplazamiento para mostrar EXPERIENCIA
+    ·Sección trabajo en grid divido en
+        -Digital
+        -Tradicional
+-Footer con:
+    ·Logo
+    ·Sobre mi
+    ·Botones enlaces a pdf
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO_GRID</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--Header con logo y menú hamburguesa-->
+
+    <header class="header">
+        <a href="../1.HOME_Lola/index.html">
+        <div class="header__logo">
+            <img src="./assets/header_logo--Lola.svg" alt="" class="header-logo">
+        </a>
+
+        </div>
+        <nav class="header__nav">
+            <img src="./assets/header_nav.svg" alt="" class="">
+        </nav>
+    </header>
+
+    <!--Main-PRESENTACIÓN-->
+    <!--FIX : Á con acento no tiene en la tipografía secundaria-->
+
+    <main class="main">
+        
+        <div class="main__section--cocina">
+            <img src="./assets/img__500x500_cocina.jpg" alt="cocina">
+
+        </div>
+
+        <div class="main__section--caldas">
+            <img src="./assets/img__500x500_caldas.jpg" alt="caldas">
+        </div>
+
+        <div class="main__section--landing">
+            <img src="./assets/img__500x1000_landing.jpg" alt="landing">
+        </div>
+
+        <div class="main__section--libro">
+            <img src="./assets/img__500x500_libro.jpg" alt="libro">
+        </div>
+
+        <div class="main__section--flamenco">
+            <img src="./assets/img__1000x1000_flamenco.jpg" alt="flamenco">
+        </div>
+
+        <div class="main__section--vermut">
+            <img src="./assets/img__500x500_vermut.jpg" alt="vermut">
+        </div>
+
+        <div class="main__section--eta">
+            <img src="./assets/img__500x500_eta.jpg" alt="eta">
+        </div>
+
+        <div class="main__section--golf">
+            <img src="./assets/img__500x500_golf.jpg" alt="golf">
+        </div>
+
+        <div class="main__section--ilustracion">
+            <img src="./assets/img__1000x1000_ilustracion.jpg" alt="ilustracion">
+        </div>
+
+        <div class="main__section--aporia">
+            <img src="./assets/img__500x500_aporia.jpg" alt="stay">
+        </div>
+
+        <div class="main__section--tinder">
+            <img src="./assets/img__500x500_tinder.jpg" alt="tinder">
+        </div>
+
+        <div class="main__section--rama">
+            <img src="./assets/img__500x1000_storie.jpg" alt="rama">
+        </div>
+
+        <div class="main__section--grumos">
+            <img src="./assets/img__500x500_grumos.jpg" alt="grumos">
+        </div>
+
+        <div class="main__section--black">
+            <img src="./assets/img__500x500_black.jpg" alt="black">
+        </div>
+
+        <div class="main__section--traducciones">
+            <img src="./assets/img__500x500_traducciones.jpg" alt="traducciones">
+        </div>
+
+        <div class="main__section--3m">
+            <img src="./assets/img__500x500_3emes.jpg" alt="3m">
+        </div>
+
+        <div class="main__section--exlibris">
+            <img src="./assets/img__500x500_exlibris.jpg" alt="exlibris">
+        </div>
+
+        <div class="main__section--cientifico">
+            <img src="./assets/img__500x500_cientifico.jpg" alt="cientifico">
+        </div>
+
+        <div class="main__section--flash">
+            <img src="./assets/img__500x500_flash.jpg" alt="flash">
+        </div>
+
+        <div class="main__section--ola">
+            <img src="./assets/img__500x500_ola.jpg" alt="ola">
+        </div>
+
+        <div class="main__section--dientes">
+            <img src="./assets/img__1000x500_dienteso.jpg" alt="dientes">
+        </div>
+
+        <div class="boton">
+            <div class="boton__up">DISEÑO</div>
+            <div class="space"></div>
+            <div class="boton__down">ILUSTRACIÓN</div>
+
+
+        </div>
+
+
+    </main>
+
+    <!--Footer con logo, descripción sobre mi y dos enlaces a pdf-->
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <img src="assets/header_logo--Lola.svg" alt="logo footer">
+            </div>
+            <div class="footer__descripcion">
+                <div class="p descripcion_p">
+                    <h2>SOBRE MI</h2>
+                    <br>
+                    <p>Soy una artista visual con un curriculum orientado al a gráfica. Graduada en Bellas Artes con
+                        estancia en Plymouth. Me especialicé con un Máster en Medios de Impresión Gráfica, Ilustración y
+                        Acuñación Artística de la FNMT-RCM, donde trabajé durante un año.
+                    </p>
+
+                    <p> Me he formado en Marketing Digital y Branding ya que considero que además de tener un dominio de
+                        la gráfica tradicional y digital, es importante comunicar con los medios digitales
+                        contemporáneos y transversales. Actualmente trabajo como diseñadora gráfica mientras lo sigo
+                        compaginando con nueva formación enfocada a motion graphics y diseño web.</p>
+
+
+
+                </div>
+
+            </div>
+
+            <ul class="footer__enlaces">
+
+                <li class="footer__portfolio">
+                    Enlade Portfolio
+
+                </li>
+
+                <li class="footer__cv"><a href="../1.HOME_Lola/assets/LolaFdezCorral_CV_2024.pdf" class="sin-estilo">
+                    Enlace CV
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
