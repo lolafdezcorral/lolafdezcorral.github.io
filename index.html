@@ -1,0 +1,339 @@
+<!--
+Archivo contiene estructura general de web-portfolio:
+- Header-menú
+- Main que agrupa el contenido principal, en su interior
+    ·Section con diferentes apartador que definen el PERFIL
+    ·Marquee con desplazamiento para mostrar FORMACIÓN
+    ·Marquee con desplazamiento para mostrar EXPERIENCIA
+    ·Sección trabajo en grid divido en
+        -Digital
+        -Tradicional
+-Footer con:
+    ·Logo
+    ·Sobre mi
+    ·Botones enlaces a pdf
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME_Lola</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--Header con logo y menú hamburguesa-->
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/header_logo--Lola.svg" alt="" class="header-logo">
+
+        </div>
+        <nav class="header__nav">
+            <img src="./assets/header_nav.svg" alt="" class="">
+        </nav>
+    </header>
+
+    <!--Main-PRESENTACIÓN-->
+    <!--FIX : Á con acento no tiene en la tipografía secundaria-->
+
+    <main class="main">
+        <a href="../3.PORTFOLIO_GRID/index.html">
+        <div class="main__wrapper">
+            <div class="main__nombre">
+                <div class="main__lola">
+                    <h1>LOLA</h1>
+                </div>
+                <div class="main__apellidos">
+                    <h2>FERNANDEZ</h2>
+                    <h2>CORRAL</h2>
+                </div>
+            </div>
+        </a>
+
+            <div class="main__perfiles">
+                <div class="main__perfiles--diseno">Diseño</div>
+
+
+                <div class="
+            main__perfiles--grabado">Grabado</div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--Tres secciones para definir perfil, formación y experiencia.
+    La primera formato cajas, las otras marquee con desplazamiento-->
+
+    <section class="section">
+
+        <div class="section__perfil--identidad">
+            <h2>Identidad corporativa </h2>
+            <p><span style="color:#727687;">Logo e identidad de marca</span></p>
+        </div>
+
+        <div class="section__perfil--diseno">
+            <h2>Diseño gráfico</h2>
+            <p><span style="color:#727687;"> Tradicional y digital </span></p>
+
+        </div>
+
+        <div class="section__perfil--animacion">
+            <h2>Animación</h2>
+            <p><span style="color:#727687;">After Effects y Premiere</span></p>
+        </div>
+
+        <div class="section__perfil--ilustracion">
+            <h2>Ilustración</h2>
+            <p><span style="color:#727687;">Tradicional y digital</span></p>
+        </div>
+
+        <div class="section__perfil--calcografia">
+            <h2>Calcografía</h2>
+            <p><span style="color:#727687;">Técnicas de impresión</span></p>
+        </div>
+
+        <div class="section__perfil--adaptaciones">
+            <h2>RRSS y Web</h2>
+            <p><span style="color:#727687;">Adaptaciones y prototipado</span></p>
+        </div>
+
+    </section>
+
+    <div class="marquee__formacion">
+        <ul class="marquee__contenido">
+            <li class="marquee__2024">
+                <b>2024_</b>Máster en diseño web y postproduccion visual.Escuela de Innovación y Marketing.
+                CEI&nbsp;&bull;&nbsp;
+            </li>
+
+            <li class="marquee__2021">
+                <b>2020-2021_</b>Máster universitario en formación del profesorado. Especialidad Artes Plásticas y
+                Visuales. UCM&nbsp;&bull;&nbsp;
+            </li>
+
+            <li class="marquee__2017">
+                <b>2017-2015_</b>Máster en Medios de impresión gráfica, ilustración y acuñación artística en la
+                Fábrica Nacional de Moneda y Timbre FNMT-RCM. Madrid&nbsp;&bull;&nbsp;
+            </li>
+
+            <li class="marquee__2015">
+                <b>2015-2011_</b>Graduada en Bellas Artes por la UCLM. Matrícula de honor en el
+                TFG.Cuenca&nbsp;&bull;&nbsp;
+            </li>
+
+            <li class="marquee__2013">
+                <b>2013_</b>Plymouth University (UK). Beca programa Erasmus. Plymouth&nbsp;&bull;&nbsp;
+            </li>
+
+            <li class="marquee__2011">
+                <b>2011_</b>Título Bachiller artístico. IES Josep Mª Llompart. Mallorca&nbsp;&bull;&nbsp;&nbsp;
+            </li>
+
+
+        </ul>
+
+    </div>
+
+
+    <section class="marquee__experiencia">
+
+        <ul class="marquee__contenido--experiencia">
+            <li class="experiencia__2017">
+                &nbsp;&bull;&nbsp;<b>2017_</b>Prácticas de empresa en la Escuela de Artes y Oficios Cruz Novillo. Cuenca
+            </li>
+
+            <li class="experiencia__2018">
+                &nbsp;&bull;&nbsp;<b>2018_</b>Prácticas de empresa en el Taller de Obra Gráfica de la Fundación Joan
+                Miró. Mallorca
+
+                &nbsp;&bull;&nbsp;<b>2018_</b>Colaboradora en la feria ARTMadrid celebrada en CentroCentro Cibeles.
+
+                &nbsp;&bull;&nbsp;<b>2018_</b>Becaria en el departamento de Preimpresión de la Fabrica Nacional de
+                Moneda y Timbre. FNMT-RCM. Madrid
+
+            </li>
+            <li class="experiencia__2020">
+                &nbsp;&bull;&nbsp;<b>2020-2019_</b>Disañadora gráfica en IB3-Ens Públic de Radiotelevisió de les Illes
+                Balears. Mallorca
+            </li>
+            <li class="experiencia__2021">
+                &nbsp;&bull;&nbsp;<b>2021_</b>Docente en prácticas en IES Satafi de Getafe (Madrid). Profesora de
+                plástica ESO y dibujo artístico de Bachillerato
+
+                &nbsp;&bull;&nbsp;<b>2021_</b>Diseñadora gráfica autónoma. Trabajos para Correos, Ib3, SMAP. Madrid
+            </li>
+
+
+            <li class="experiencia__2022">
+                &nbsp;&bull;&nbsp;<b>2022_</b>Técnica de diseño y pintura para el estudio Antonio Santín. Madrid
+            </li>
+            <li class="experiencia__2024">
+                &nbsp;&bull;&nbsp;<b>Actual-2022_</b>Diseñadora gráfica para la cadena hotelera Blau Hotels. Grupo Roxa
+                Mallorca&nbsp;&bull;&nbsp;
+            </li>
+
+        </ul>
+    </section>
+
+    <!--Sección donde tenemos la galería de trabajos en grid-->
+    <!-- Todo serian enlaces a index slider, ejemplo con IDENTIDAD -->
+
+    <section class="section__trabajo">
+        <div class="trabajo__digital">
+
+            <div class="trabajo__digital--video">
+                <div class="titulo">
+                    <p>VÍDEO Y MOTION GRAPHICS</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/digital_video_200.gif" alt="">
+                </div>
+            </div>
+
+            <a href="../2.TRABAJO_SLIDER/index.html" class="estilo-enlace">
+                <div class="trabajo__digital--identidad">
+                    <div class="titulo">
+                        <p>IDENTIDAD CORPORATIVA</p>
+                    </div>
+                    <div class="img__activa">
+                        <img src="./assets/digital_identidad_200.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+
+            <div class="trabajo__digital--web">
+                <div class="titulo">
+                    <p>DISEÑO WEB</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/digital_web_200.gif" alt="">
+                </div>
+            </div>
+
+            <div class="trabajo__digital--adaptaciones">
+                <div class="titulo">
+                    <p>ADAPTACIONES A RRSS,WEB Y ON-OFFLINE</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/digital_adaptaciones_200.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="section__perfile">
+            <div class="section__perfil--digital">
+                Digital
+            </div>
+            <div class="section__perfil--tradicional">
+                Tradicional
+            </div>
+
+        </div>
+
+        <div class="trabajo__tradicional">
+            <div class="trabajo__tradicional--calcografia">
+                <div class="titulo">
+                    <p>CALCOGRAFÍA Y DOCUMENTO DE VALOR</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/tradicional_calcografia_200.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="trabajo__tradicional--ilustracion">
+                <div class="titulo">
+                    <p>ILUSTRACIÓN</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/tradicional_ilustracion_200.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="trabajo__tradicional--artes">
+                <div class="titulo">
+                    <p>DIBUJO Y PINTURA</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/tradicional_pintura_200.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="trabajo__tradicional--editorial">
+                <div class="titulo">
+                    <p>MAQUETACIÓN</p>
+                </div>
+                <div class="img__activa">
+                    <img src="./assets/tradicional_maquetacion_200.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!--Footer con logo, descripción sobre mi y dos enlaces a pdf-->
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <img src="assets/header_logo--Lola.svg" alt="logo footer">
+            </div>
+            <div class="footer__descripcion">
+                <div class="p descripcion_p">
+                    <h2>SOBRE MI</h2>
+                    <br>
+                    <p>Soy una artista visual con un curriculum orientado al a gráfica. Graduada en Bellas Artes con
+                        estancia en Plymouth. Me especialicé con un Máster en Medios de Impresión Gráfica, Ilustración y
+                        Acuñación Artística de la FNMT-RCM, donde trabajé durante un año.
+                    </p>
+
+                    <p> Me he formado en Marketing Digital y Branding ya que considero que además de tener un dominio de
+                        la gráfica tradicional y digital, es importante comunicar con los medios digitales
+                        contemporáneos y transversales. Actualmente trabajo como diseñadora gráfica mientras lo sigo
+                        compaginando con nueva formación enfocada a motion graphics y diseño web.</p>
+
+
+
+                </div>
+
+            </div>
+
+            <ul class="footer__enlaces">
+
+                <li class="footer__portfolio">
+                    Enlade Portfolio
+
+                </li>
+
+                <li class="footer__cv"><a href="../1.HOME_Lola/assets/LolaFdezCorral_CV_2024.pdf" class="sin-estilo">
+                    Enlace CV
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
